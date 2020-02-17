@@ -5,7 +5,7 @@ import { themes, ThemeContext } from "./themes";
 
 class App extends Component {
   state = {
-    theme: themes.dark
+    theme: themes.light
   };
 
   toggleTheme = () => {
