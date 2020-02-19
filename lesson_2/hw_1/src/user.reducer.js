@@ -1,17 +1,16 @@
-import { createStore } from "redux"
 import{ADD_USER,DEL_USER} from "./users.actions"
 
 
 
-export const userReducer = (state ={}, action) => {
+export const userReducer = (state ={users:[]} , action) => {
     switch (action.type) {
         case ADD_USER:
             return {
-                ...state
+                users: state.users.concat(action.user)
             }
         case DEL_USER:
             return {
-                ...state
+                users: state.users.filter(user => user.id !== action.id)
             }
 
         default:
