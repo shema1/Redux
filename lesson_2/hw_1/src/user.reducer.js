@@ -1,8 +1,4 @@
-import{ADD_USER,DEL_USER} from "./users.actions"
-
-
-
-export const userReducer = (state ={users:[]} , action) => {
+const userReducer = (state ={users:[]} , action) => {
     switch (action.type) {
         case ADD_USER:
             return {
@@ -18,3 +14,4 @@ export const userReducer = (state ={users:[]} , action) => {
     }
 }
 
+export default userReducer

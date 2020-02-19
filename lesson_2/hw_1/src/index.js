@@ -1,11 +1,8 @@
 // import './index.scss'
 import store from './store'
-import { addUser,delUser } from './users.actions'
+import { addUser,deleteUser } from './users.actions'
 
-const obj = {
-  id: 76,
-  name: 'Sarah'
-}
+
 
 store.dispatch(addUser({
   id: 76,
@@ -19,7 +16,7 @@ store.dispatch(addUser({
   id:11,
   name:'test2'
 }))
-store.dispatch(delUser(11))
+store.dispatch(deleteUser(11))
 
 
 

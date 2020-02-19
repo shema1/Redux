@@ -9,7 +9,7 @@ export const addUser = (user) => {
     }
 }
 
-export const delUser = (id) => {
+export const deleteUser = (id) => {
     return {
         type: DEL_USER,
         id
