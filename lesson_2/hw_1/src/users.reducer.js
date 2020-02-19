@@ -2,15 +2,15 @@ import{ADD_USER,DEL_USER} from "./users.actions"
 
 
 
-const userReducer = (state ={users:[]} , action) => {
+const userReducer = (state ={usersList:[]} , action) => {
     switch (action.type) {
         case ADD_USER:
             return {
-                users: state.users.concat(action.user)
+                usersList: state.usersList.concat(action.user)
             }
         case DEL_USER:
             return {
-                users: state.users.filter(user => user.id !== action.id)
+                usersList: state.usersList.filter(user => user.id !== action.id)
             }
 
         default:
