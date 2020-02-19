@@ -19,6 +19,3 @@ export const userReducer = (state ={}, action) => {
     }
 }
 
-
-
-export default store

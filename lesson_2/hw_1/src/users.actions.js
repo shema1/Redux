@@ -4,7 +4,7 @@ export const DEL_USER = "DEL_USER"
 
 export const addUser = () => {
     return {
-        type: ADD_USER
+        type: ADD_USER,
     }
 }
 
