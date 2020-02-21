@@ -3,7 +3,7 @@ export const SELECT_LANGUAGE = "SELECT_LANGUAGE"
 
 
 
-export const changeLanguage=(lang)=>{
+ const changeLanguage=(lang)=>{
     return {
         type: SELECT_LANGUAGE,
         payload:{
@@ -11,3 +11,5 @@ export const changeLanguage=(lang)=>{
         }
     }
 }
+
+export default changeLanguage

@@ -1,5 +1,5 @@
 import store from './store'
-import { changeOnUa, changeLanguage } from './language.actions'
+import changeLanguage from './language.actions'
 import { addProduct, deleteProduct } from './cart.actions'
 import { addUser, removeUser } from './user.actions'
 
