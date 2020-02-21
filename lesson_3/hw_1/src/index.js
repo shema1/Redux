@@ -1,7 +1,7 @@
 import store from './store'
 import { changeOnUa } from './language.actions'
-import { addProduct, deleteProduct } from './card.actions'
-import { addUser, removeUser } from './users.actions'
+import { addProduct, deleteProduct } from './cart.actions'
+import { addUser, removeUser } from './user.actions'
 
 store.dispatch(changeOnUa())
 store.dispatch(addProduct({ id: 76, name: "milk" }))
