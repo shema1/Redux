@@ -1,20 +1,12 @@
-import { EN, ES, UA } from "./language.actions"
+import { SELECT_LANGUAGE } from "./language.actions"
 
 
 
 const languageReducer = (state = "en", action) => {
     switch (action.type) {
-        case EN:
-            return {
-                language: 'EN'
-            }
-        case ES:
-            return {
-                language: 'ES'
-            }
-        case UA:
-            return {
-                language: 'UA'
+        case SELECT_LANGUAGE:
+            return{
+                language: action.payload.lang
             }
         default:
             return state
