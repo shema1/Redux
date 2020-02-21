@@ -2,7 +2,7 @@ export const ADD_PRODUCT = 'CARD/ADD_PRODUCT'
 export const DELETE_PRODUCT = 'CARD/DELETE_PRODUCT'
 
 
-export const addProduct = (product)=>{
+export const setProduct = (product)=>{
     return{
         type:ADD_PRODUCT,
         payload:{
