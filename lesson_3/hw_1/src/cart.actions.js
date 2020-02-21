@@ -12,7 +12,7 @@ export const addProduct = (product)=>{
 }
 
 
-export const deleteProduct = (productId) =>{
+export const removeProduct = (productId) =>{
     return{
         type: DELETE_PRODUCT,
         payload:{
