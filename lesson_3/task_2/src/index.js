@@ -1,5 +1,4 @@
-import store from './store'
-import{increment, decrement, reset} from './counter.actions'
+import{increment, decrement, store} from './counter'
 
 
 store.dispatch(increment())
