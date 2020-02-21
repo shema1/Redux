@@ -2,7 +2,7 @@ import { EN, ES, UA } from "./language.actions"
 
 
 
-const languageReducer = (state = "EN", action) => {
+const languageReducer = (state = "en", action) => {
     switch (action.type) {
         case EN:
             return {
