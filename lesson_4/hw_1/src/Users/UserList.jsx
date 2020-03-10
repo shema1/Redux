@@ -8,7 +8,7 @@ class UserList extends Component {
     itemsPerPage: 3
   };
   render() {
-    const { users, prev, next, currentPage } = this.props;
+    const { users, goPrev, goNext, currentPage } = this.props;
     const { itemsPerPage } = this.state;
     const newList = users.slice(
       currentPage * itemsPerPage,
@@ -17,8 +17,8 @@ class UserList extends Component {
     return (
       <div>
         <Pagination
-          prev={prev}
-          next={next}
+          goPrev={goPrev}
+          goNext={goNext}
           currentPage={currentPage}
           totalItems={users.length}
           itemsPerPage={itemsPerPage}
@@ -41,8 +41,8 @@ const mapState = state => {
 };
 
 const mapDispatch = {
-  prev: UserActions.goPrev,
-  next: UserActions.goNext
+    goPrev: UserActions.goPrev,
+    goNext: UserActions.goNext
 };
 
 export default connect(mapState, mapDispatch)(UserList);
