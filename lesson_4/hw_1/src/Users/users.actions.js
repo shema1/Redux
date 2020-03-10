@@ -1,32 +1,17 @@
-export const ADD_USER = "USERS/ADD_USER"
-export const DELETE_USER = "USERS/DELETE_USER"
-export const UPDATE_USER = 'USERS/UPDATE_USER'
+export const GO_PREV = "USERS/GO_PREV"
+export const GO_NEXT = "USERS/GO_NEXT"
 
 
-export const addUser = (userData) => {
+
+export const goPrev = () => {
     return {
-        type: ADD_USER,
-        payload:{
-            userData
-        }
+        type: GO_PREV,
     }
 }
 
-export const deleteUser = (userId) => {
+export const goNext = () => {
     return {
-        type: DELETE_USER,
-        payload:{
-            userId 
-        }
+        type: GO_NEXT,
     }
 }
 
-export const updateUser = (userId,userData) => {
-    return {
-        type: UPDATE_USER,
-        payload:{
-            userId,
-            userData
-        }
-    }
-}
