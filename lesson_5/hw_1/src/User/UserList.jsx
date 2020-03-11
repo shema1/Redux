@@ -1,14 +1,22 @@
 import React from "react";
 import User from "./User";
 import { connect } from "react-redux";
-import { usersListSelections, filterTextSelections, filterUsersSelections } from "./user.selectors";
+import {
+  usersListSelections,
+  filterTextSelections,
+  filterUsersSelections
+} from "./user.selectors";
 import Filter from "../Filter";
 import * as userActions from "./user.actions";
 
 const UserList = ({ users, filterText, newFilterText }) => {
   return (
     <div>
-      <Filter filterText={filterText} onChange={newFilterText} count={users.length} />
+      <Filter
+        filterText={filterText}
+        onChange={newFilterText}
+        count={users.length}
+      />
       <ul className="users">
         {users.map(user => (
           <User key={user.id} {...user} />

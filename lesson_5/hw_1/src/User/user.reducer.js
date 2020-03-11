@@ -1,4 +1,4 @@
-import {FILTER_TEXT} from './user.actions'
+import { FILTER_TEXT } from './user.actions'
 
 const initialState = {
     filterText: "",
@@ -64,11 +64,11 @@ const initialState = {
 const userReducer = (state = initialState, actions) => {
 
     switch (actions.type) {
-    case FILTER_TEXT:
-        return{
-            ...state,
-            filterText: actions.text
-        }
+        case FILTER_TEXT:
+            return {
+                ...state,
+                filterText: actions.text
+            }
         default:
             return state
     }
