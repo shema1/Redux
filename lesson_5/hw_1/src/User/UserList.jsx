@@ -5,7 +5,7 @@ import { usersListSelections, filterTextSelections, filterUsersSelections } from
 import Filter from "../Filter";
 import * as userActions from "./user.actions";
 
-const UserList = ({ users, filterText, onChange }) => {
+const UserList = ({ users, filterText, newFilterText }) => {
   return (
     <div>
       <Filter filterText={filterText} onChange={newFilterText} count={users.length} />
