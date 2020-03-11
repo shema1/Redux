@@ -8,7 +8,7 @@ import * as userActions from "./user.actions";
 const UserList = ({ users, filterText, newFilterText }) => {
   return (
     <div>
-      <Filter filterText={filterText} newFilterText={newFilterText} length={users.length} />
+      <Filter filterText={filterText} newFilterText={newFilterText} count={users.length} />
       <ul className="users">
         {users.map(user => (
           <User key={user.id} {...user} />
