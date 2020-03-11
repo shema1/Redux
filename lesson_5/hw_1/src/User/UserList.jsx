@@ -5,10 +5,10 @@ import { usersListSelections, filterTextSelections, filterUsersSelections } from
 import Filter from "../Filter";
 import * as userActions from "./user.actions";
 
-const UserList = ({ users, filterText, newFilterText }) => {
+const UserList = ({ users, filterText, onChange }) => {
   return (
     <div>
-      <Filter filterText={filterText} newFilterText={newFilterText} count={users.length} />
+      <Filter filterText={filterText} onChange={newFilterText} count={users.length} />
       <ul className="users">
         {users.map(user => (
           <User key={user.id} {...user} />
