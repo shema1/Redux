@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filter = ({ filterText, onChange, count }) => {
+const Filter = ({ filterText, count, onChange }) => {
   return (
     <div className="filter">
       <span className="filter__count">{count}</span>
