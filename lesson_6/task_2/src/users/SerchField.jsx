@@ -33,9 +33,7 @@ class SerchField extends Component {
 }
 
 const mapDispatch = {
-  showSpinner: usersActions.showSpinner,
-  userDataRecived: usersActions.userDataRecived,
-  fetchUserData : usersActions.fetchUserData
+  fetchUserData: usersActions.fetchUserData
 };
 
 export default connect(null, mapDispatch)(SerchField);
