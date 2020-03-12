@@ -9,8 +9,8 @@ function App() {
   return (
     <Provider store={store}>
       <div className="page">
-        <SerchField />
         <Userinfo />
+        <SerchField />
       </div>
     </Provider>
   );
