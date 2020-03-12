@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect, useStore } from "react-redux";
 import * as usersActions from "./user.actions";
 import { getUserData } from "./user.geteway";
-class SerchField extends Component {
+class SearchField extends Component {
   state = {
     userName: ""
   };
@@ -36,4 +36,4 @@ const mapDispatch = {
   fetchUserData: usersActions.fetchUserData
 };
 
-export default connect(null, mapDispatch)(SerchField);
+export default connect(null, mapDispatch)(SearchField);

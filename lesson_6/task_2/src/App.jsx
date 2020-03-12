@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import './index.scss';
 import Userinfo from './users/Userinfo';
-import SerchField from './users/SerchField';
+import SerchField from './users/SearchField';
 
 function App() {
   return (
